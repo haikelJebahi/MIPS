@@ -22,4 +22,5 @@ Les fichiers pour tester le programme devront commencer par un "main:" et finir 
 
 Je me suis inspiré des exemples de [University of the PACIFIC](https://ecs-network.serv.pacific.edu/ecpe-170/tutorials/example1.asm/view).
 
-Les éléments sont d'abord enregistré un à un dans le registre. Néanmoins, seulement "add", "addi" "sub" et "exit" fourniront un résultat par manque de temps.
+Les éléments sont d'abord enregistré un à un dans le registre. Néanmoins, seulement "add", "addi" "sub" et "exit" fourniront un résultat.
+
