@@ -9,8 +9,6 @@
 //1ko = 8kbit
 char memoire[16][512];
 
-//ligne 
-
 struct registres {
     char name[4];
     int r[16];
@@ -22,6 +20,8 @@ struct bancDeRegistres {
 };
 typedef struct bancDeRegistres BancRegistres;
 
+
+//INITIALISER UN BANC DE REGISTRE
 BancRegistres * creerBanc()
 {
     BancRegistres *br = NULL;
