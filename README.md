@@ -5,8 +5,10 @@ Date : 30/11/2000
 OS : Debian Buster 10.6 \
 gcc : 8.3.0 \
 cmake : 3.13.4
+git : 2.20.1
 ## Quick Start
 ````shell script
+git clone https://github.com/haikelJebahi/MIPS.git
 cmake CmakeLists.txt
 make
 ./mips Projet/test.txt
