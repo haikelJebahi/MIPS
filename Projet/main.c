@@ -80,6 +80,7 @@ int searchFonction(TabFonc *t, char *nom) {
     return 0;
 }
 
+//TRANSFORME L'OPCODE EN BINAIRE
 int opcodeBinary(char *opcode) {
     if (strcmp(opcode, "add") == 0) {
         return 0101;
@@ -106,6 +107,7 @@ int opcodeBinary(char *opcode) {
     }
 }
 
+//OBTENIR CHAQUE ARGUMENT DANS UNE INSTRUCTIONS
 void getArgument(char *ligne, int a, char *arg){
     int i = 0;
     int j = 0;
@@ -129,7 +131,7 @@ void getArgument(char *ligne, int a, char *arg){
     arg[j] = '\0';
 }
 
-//renvoie l'indice du registre
+//RENVOIE L'INDICE DU REGISTRE
 int registreAdresse(char *argRegistre)
 {
   char a[1];
@@ -159,7 +161,7 @@ int registreAdresse(char *argRegistre)
   return -1;
 }
 
-//renvoie le binaire de l'indice du registre
+//RENVOIE LE BINAIRE DE L'INDICE DU REGISTRE
 void binaryRegistre(int indice,int *tab)
 {
   int a=0;
@@ -178,6 +180,7 @@ void binaryRegistre(int indice,int *tab)
   }
 }
 
+//TRANSFORM UNE DECIMAL EN BINAIRE
 int decimalRegistre(int * tabBinaire)
 {
     int decimal = 0;
@@ -191,6 +194,7 @@ int decimalRegistre(int * tabBinaire)
     return decimal;
 }
 
+//fetch
 void monSwitch(int opcode, char *memoire, BancRegistres* bancR,int ligne)
 {
   char a[5];
