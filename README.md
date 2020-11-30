@@ -9,7 +9,7 @@ cmake : 3.13.4
 ````shell script
 cmake CmakeLists.txt
 make
-./mips test.txt
+./mips Projet/test.txt
 ````
 ## Informations sur le projet
 Ce projet à été réalisé dans le cadre de ma L3 à l'université de Perpignan.
